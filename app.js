@@ -1,6 +1,6 @@
 
-function sayHello(name) {
-    console.log('Hello '+name + ' nice to meet you');
+function saybye(name) {
+    console.log('bye '+name + ' it was nice meeting you');
 }
 
-sayHello('Bartek');
+saybye('Bartek');
