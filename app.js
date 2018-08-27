@@ -7,6 +7,6 @@ emitter.on('Logging', function(arg){
     console.log('Logging Device', arg);
 });
 
-const log = require('./logger');
-log('message');
+const logger = require('./logger');
+logger.log('message');
 

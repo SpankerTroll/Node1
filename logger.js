@@ -11,3 +11,4 @@ function log(message) {
     emitter.emit('Logging', {id: 1, url: 'logging'});
 }
 
+module.exports.log = log;
