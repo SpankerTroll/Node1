@@ -1,6 +1,12 @@
 
-function saybye(name) {
-    console.log('bye '+name + ' it was nice meeting you');
-}
+const EventEmitter = require('events');
+const emitter = new EventEmitter();
 
-saybye('Pawelek');
+// Register listener
+emitter.on('Logging', function(arg){
+    console.log('Logging Device', arg);
+});
+
+const log = require('./logger');
+log('message');
+
